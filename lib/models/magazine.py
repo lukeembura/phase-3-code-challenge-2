@@ -1,6 +1,6 @@
 from lib.db.connection import get_connection
-from lib.author import Author
-from lib.article import Article
+from models.author import Author
+from models.article import Article
 
 class Magazine:
     def __init__(self, name, category, id=None):

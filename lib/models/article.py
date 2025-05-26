@@ -55,4 +55,4 @@ class Article:
         cursor.execute("SELECT * FROM articles WHERE author_id = ?", (author_id,))
         rows = cursor.fetchall()
         conn.close()
-        return [cls.from_row(row) for row in rows
+        return [cls.from_row(row) for row in rows]
